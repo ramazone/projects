@@ -1,0 +1,213 @@
+@import "bourbon"
+@import "_fonts.sass"
+@import "_vars.sass"
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoSlabRegular", sans-serif
+	overflow-x: hidden
+	color:#555555
+
+h1,h2,h3,h4,h5,h6
+	font-family: "MontserratBold", sans-serif
+	color: #222222
+
+h1
+	font-size: em(58)
+h2
+	font-size: em(40)
+h3
+	font-size: em(18)
+	text-transform: uppercase
+p
+	color: #777777
+a
+	outline: none !important
+
+.hidden
+	display: none
+
+
+.mnu-line
+	
+	min-height: 115px
+
+a.logo
+	display: block
+	//text-align: center
+	padding-top: 45px
+	min-height: 115px
+	
+
+	
+.main-mnu
+	min-height: 115px
+	text-align: right 
+	font-size: em(15px)
+	li
+		display: inline-block
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0 
+	> ul
+		> li
+			> a
+				display: inline-block
+				margin: 51px 0px 40px 36px
+				color: #777777
+				font-family: MontserratRegular, sans-serif
+				text-transform: uppercase
+				+mt(.5s)
+				&:hover
+					color: #555555
+					transform: scale(1.2)
+
+
+.hidden-mnu 
+	background-color: #e9e9e9
+	text-align: center
+	display: none
+	margin-top: -10px
+	li
+		display: block
+		+mt(.5s)
+		&:hover
+			background-color: $btn
+	> ul
+		padding: 0px
+		margin: 0px
+		> li
+			> a
+				color: #777777
+				font-family: MontserratRegular, sans-serif
+				text-transform: uppercase
+				margin: 0
+				display: block
+				padding: 15px 
+				+mt(.5s)
+				&:hover
+					transform: scale(1.2)
+					color: #fff
+
+.header-content
+	background-image: url(img/main_slide.png)	
+	background-size: cover
+	background-position: center
+
+
+.header-content-wraper
+	min-height: 530px
+	//background-image: url(img/main_slide.png)	
+	//background-size: cover
+	//background-position: center
+	text-align: center	
+	h1
+		margin-top: 0px
+		margin-bottom: 0px
+		padding-top: 109px
+		color: #ffffff	
+
+		text-transform: uppercase	
+		font-family: MontserratBold ,sans-serif	
+		font-size: em(64px)
+		font-weight: 400
+		line-height: 1.22
+	p
+		color: #cccccc
+		font-size: em(22px)
+					
+.button
+	margin-top: 54px
+	//padding: 34px 0 116px
+	a
+		display: inline-block
+		background-color: $btn
+		color: #ffffff
+		text-transform: uppercase
+		
+		font-family: MontserratBold ,sans-serif
+		font-weight: 200
+		text-align: center
+		padding: 16px 32px
+		border-radius: 40px
+		+mt(.18s)
+		box-shadow: 8px 10px 2px #000
+		&:hover
+			background-color: #7CC576
+			text-decoration: none
+		&:focus
+			text-decoration: none
+		&:active
+			text-decoration: none
+			background-color: #468F40
+			transform: translate(2px, 2px)
+			box-shadow: none
+
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 14px
+
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #555555
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+
+.toggle-mnu 
+	position: absolute
+	top: 36px
+	right: 20px
+
+.s-wide
+	text-align: center
+	h2
+		margin: 0px
+		padding-top: 100px
+		text-transform: uppercase
+	p
+		padding-bottom:	90px
+		margin: 0px
+		font-size: em(21px)
+		color: #777777
+
+.item
+	padding-bottom: 100px
+	text-align: center
+	h3
+		color: #222222
+		font-size: em(18px)
+		margin-top: 40px
+	p
+		font-size: em(14px)
+

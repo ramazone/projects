@@ -1,0 +1,162 @@
+@import "bourbon"
+@import vars.sass
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+.services-bg
+	background-image: url(img/sea_stones_bg.png)	
+	background-size: cover
+	background-position: center
+.services-content-wraper
+	min-height: 616px
+.right-side
+	h2
+		color: #fff
+		text-transform: uppercase
+		margin-top: 80px
+	p
+		color: #cccccc
+		span
+			padding-left: 10px
+	> h2
+		>span
+			color: $btn
+
+.progect-bg
+	background-image: url(img/ipad_bg.png)	
+	background-size: cover
+	background-position: center
+
+	min-height: 616px
+.project-wraper
+	h2
+		color: #fff
+		text-transform: uppercase
+		margin-top: 80px
+	p
+		color: #cccccc
+.project-content
+	text-align: left
+	h3
+		font-weight: 300
+		font-size: em(20px)
+	p 
+		padding-bottom: 20px
+		margin-bottom: 0
+		font-size:em(19px)
+.img-adv
+	display: inline-block
+	img
+		vertical-align: middle
+.adv-sub
+	display: inline-block
+	/* min-height: 73px */
+	vertical-align: middle
+	line-height: 1.29
+	margin-left: 10px
+	h4
+		margin: 0
+		padding-top: 8px
+		font-size: em(19px)
+		font-family: MontserratBold ,sans-serif
+		font-weight: 300
+		
+	p
+		margin: 0
+		font-size: em(16px)
+
+.adv
+	margin-bottom: 15px
+
+
+.project-content .button
+	margin: 0
+	a
+		display: inline-block
+		background-color: #fff
+		color: $btn
+		text-transform: uppercase
+				
+		font-family: MontserratBold ,sans-serif
+		font-weight: 200
+		text-align: center
+		padding: 0
+		border-radius: 40px
+		
+		box-shadow: none
+		&:hover
+			text-decoration: none
+			color:#7cc576
+			transform: scale(1.2)
+		&:focus
+			text-decoration: none
+
+		&:active
+			text-decoration: none
+			background-color: none
+			box-shadow: none
+			
+.culture-bg
+	background-color: #f9f9f9
+
+.values 
+	.item
+		overflow: visible
+		padding-bottom: 100px
+		text-align: center
+		h3
+			color: #222222
+			font-size: em(18px)
+			margin-top: 18px
+			font-weight: 300
+		p
+			font-size: em(14px)
+
+.values
+	position: relative
+
+//==== line between images ====//
+
+.values
+	.item-left
+		img.line
+			left: 230px
+			position: absolute
+			top: 48px
+
+.values
+	.item-middle
+		img.line
+			left: 230px
+			position: absolute
+			top: 48px
+
+//ALWAYS END
+@import media
+
+//Load Libs SASS
+@import app/libs/animate/animate.sass
+@import app/libs/font-awesome/css/font-awesome.sass
